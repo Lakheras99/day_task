@@ -18,7 +18,7 @@ class _CustomButtonState extends State<CustomButton> {
     var widthButton = MediaQuery.of(context).size.width;
     return Container(
       margin: EdgeInsets.all(widthButton * 0.05),
-      width: widthButton * 0.9,
+      width: widthButton * 0.9 ,
       height: heightButton * 0.068,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
