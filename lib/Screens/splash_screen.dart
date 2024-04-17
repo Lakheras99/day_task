@@ -1,3 +1,4 @@
+import 'package:daytask/Custom_Widget/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -10,10 +11,15 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Color(0xFF212832),
       body: SafeArea(
-        child: Text("Hello"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CustomButton(onPressed: () {}, text: 'Hello',),
+          ],
+        ),
       ),
     );
   }
